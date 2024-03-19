@@ -1,0 +1,270 @@
+/* .activate{
+    color: orange;
+    border-bottom: 3px solid orange;
+    animation: unset;
+} */
+
+#home{
+    height: 70svh;
+    background-image: url(wel.jpg);
+    display: grid;
+    align-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-body{
+    /* width: 50%; */
+    height: 70vh;
+    display: grid;
+    align-content: center;
+    padding: 0 100px;
+    opacity: 1;
+    background-image: linear-gradient(to right, #276AB3, #ffffff00);
+}
+
+#home .header1{
+    color: white;
+    padding-bottom: 10px;
+}
+
+#home .link-tag{
+    margin-top: 5px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    background-color: white;
+    font-weight: 700;
+    color: #58a9c3;
+    border-radius: 5px;
+}
+
+
+#home a:hover{
+    background-color: rgb(93, 169, 228);
+    color: white;
+    transition: all 0.4s ease;
+}
+
+#home .p{
+    padding: 1px;
+    width: 60%;
+    color: white;
+    font-size: 14px;
+}
+
+.container{
+    margin: 0 20svh;
+}
+
+.about{
+    display: flex;
+    margin: 5% 6%;
+}
+
+.about-us{
+    padding-left: 50px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.about-uss{
+    padding-right: 50px;
+    text-align: center;
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+}
+
+.about-us .para-g1{
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.about-uss .para-g2{
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.about-us .para-h2-1, .about-uss .para-h2-2{
+    color: #276ab3;
+}
+
+
+.about-us .learn{
+    color: white;
+    background-color:#276ab3;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.about-uss .learn{
+    color: white;
+    background-color:#276ab3;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.about-us .learn:hover{
+    color: white;
+    background-color: rgb(0, 89, 255);
+    transition: all 0.4s ease;
+}
+
+.about-uss .learn:hover{
+    color: white;
+    background-color: rgb(0, 89, 255);
+    transition: all 0.4s ease;
+}
+
+
+/* .about .img img{
+    width: 40vw;
+} */
+.about .img, .about-uss img {
+    width: 130pc;
+    height: 35vh;
+    border-radius: 5px;
+    background-color: #dddddd;
+}
+
+#blog{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 30px 8%;
+
+    
+}
+
+.blogs{
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+#blog .pic{
+    width: 100%;
+    max-width: none;
+    height: 25vh;
+    background-color: #dddddd;
+    border-radius: 5px
+}
+
+#blog .contents{
+    padding: 20px 3px;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+#blog .dat{
+    font-weight: 900;
+    font-size: 13px;
+}
+
+#Health-Blog .health-h2{
+    text-align: center;
+    color: #276ab3;
+}
+
+
+.button{
+    display: grid;
+    justify-content: center;
+}
+
+.button .learn{
+    color: white;
+    background-color: #276ab3;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+.button .learn:hover{
+    background-color:#276ab3;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+@media (max-width:800px) {
+    .about{
+        margin: 10% 3%;
+    }
+
+
+    #blog{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #blog .pic{
+        width: unset;
+    }
+
+    .about-us{
+        padding-left: 10px;
+    }
+
+    .about-uss{
+        padding-right: 10px;
+        text-align: center;
+        display: grid;
+        align-content: space-around;
+        justify-items: center;
+    }
+
+    .about-uss .para-g2, .about-us .para-g1{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:425px) {
+    #blog{
+        margin: 30px 3%;
+        justify-content: space-around;
+    }
+
+    #blog .pic{
+        /* width: 30vw; */
+    }
+
+    #home{
+        height: 60svh;
+    }
+    
+    .home-body{
+        /* width: 50%; */
+        height: 60vh;
+
+    }
+}
+
+
+@media (max-width:599px) {
+    .about .img{
+        display: none;
+    }
+
+    .about-us .para-g1, .about-uss .para-g2{
+        font-size: 12px;
+        margin: 25px;
+        text-align: center;
+        padding: 0;
+    }
+}
